@@ -8,8 +8,6 @@ from werkzeug.datastructures import  FileStorage
 from datetime import timedelta
 from flask_jwt_extended import JWTManager
 
-import firebase_admin
-from firebase_admin import firestore
 
 from App.database import create_db
 

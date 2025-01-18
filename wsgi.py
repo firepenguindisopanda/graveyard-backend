@@ -9,6 +9,7 @@ from App.controllers import ( create_user, get_all_users )
 # This commands file allow you to create convenient CLI commands for testing controllers
 
 app = create_app()
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'
 migrate = get_migrate(app)
 
 # This command creates and initializes the database
